@@ -1,4 +1,4 @@
-# OHTE:n harjoitustyö
+# Ohjelmistotekniikan harjoitustyö
 _Tykkään **banaaneista**_
 
 ## Maistuu myös:
