@@ -1,6 +1,6 @@
 # Ohjelmistotekniikan harjoitustyö
-_Tykkään **banaaneista**_
 
+Tekstiharjoitus:
 ## Maistuu myös:
 1. Porkkanat
 1. Omenat
