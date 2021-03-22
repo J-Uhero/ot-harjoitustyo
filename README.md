@@ -1,4 +1,4 @@
-# Banaanit maistuu
+# OHTE:n harjoitustyö
 _Tykkään **banaaneista**_
 
 ## Maistuu myös:
@@ -8,6 +8,7 @@ _Tykkään **banaaneista**_
 	1. Kukkakaalit
 	1. Parsakaalit
 
-# Tehtävät
-## Viikko1
+## Tehtävät
+### Viikko1
+[komentorivi](https://github.com/J-Uhero/ot-harjoitustyo/blob/master/laskarit/komentorivi.txt)
 [gitlog](https://github.com/J-Uhero/ot-harjoitustyo/blob/master/laskarit/gitlog.txt)
