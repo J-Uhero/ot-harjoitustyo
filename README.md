@@ -1,5 +1,5 @@
 # Ohjelmistotekniikan harjoitustyö
-_Tykkään **banaaneista**_
+Epäsynkronointikokeilu
 
 ## Maistuu myös:
 1. Porkkanat
