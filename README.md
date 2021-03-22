@@ -11,4 +11,5 @@ _Tykkään **banaaneista**_
 ## Tehtävät
 ### Viikko1
 [komentorivi](https://github.com/J-Uhero/ot-harjoitustyo/blob/master/laskarit/komentorivi.txt)
+
 [gitlog](https://github.com/J-Uhero/ot-harjoitustyo/blob/master/laskarit/gitlog.txt)
