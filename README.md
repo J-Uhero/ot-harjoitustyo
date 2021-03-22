@@ -1,6 +1,6 @@
 # Ohjelmistotekniikan harjoitustyö
+Epäsynkronointikokeilu
 
-Tekstiharjoitus:
 ## Maistuu myös:
 1. Porkkanat
 1. Omenat
