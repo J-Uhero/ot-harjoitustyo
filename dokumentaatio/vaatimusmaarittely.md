@@ -6,7 +6,7 @@ Pelissä painetaan ruudukon ruutuja ja yritetään kartoittaa niistä saatavilla
 numerovihjeillä, missä laudan ruuduissa on miinoja osumatta itse sellaiseen.
 
 ## Käyttäjäroolit
-* sovelluksessa on vain normaaleja käyttäjiärooleja, joilla voi pelata peliä
+* sovelluksessa on vain normaaleja käyttäjärooleja, joilla voi pelata peliä
   ja kirjata omia tuloksia ylös. Erillistä ylläpitokäyttäjäroolia ei tarvita.
 
 ## Toiminnallisuudet
