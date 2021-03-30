@@ -30,9 +30,9 @@ numerovihjeillä, missä laudan ruuduissa on miinoja osumatta itse sellaiseen.
   napit ja valikot (toteutetaan Tkinterillä tai Pygamella).
   
 ## Kehitysideoita
-* Erilaisia vaikeustasoja eli pelaaja voi valita peliruudukon koon ja miinojen määrän
-* Vierekkäisten tyhjien ruutujen ja niiden viereisten numeroruutujen automaattinen
-  aukeaminen painettaessa yhtä tyhjää ruutua pelitahdin jouhevoittamiseksi
+* Erilaisia vaikeustasoja eli pelaaja voi valita peliruudukon koon ja miinojen määrän.
+* Vierekkäisten tyhjien ruutujen ja niiden viereisten numeroruutujen automaattinen.
+  aukeaminen painettaessa yhtä tyhjää ruutua pelitahdin jouhevoittamiseksi.
 * Graafista ulkoasua voi kehittää persoonalliseen suuntaan.
-* Kentät voivat poiketa myös muodoltaan
+* Kentät voivat poiketa myös muodoltaan.
 
