@@ -10,7 +10,7 @@ _**testi**tekstiä_
 
 ### Viikko2
 #### Laskarit
-* [screenshot testikattavuudesta](https://github.com/J-Uhero/ot-harjoitustyo/blob/master/laskarit/viikko2/nayttokuvacoverage-report-2021-3-29-klo-17-58-08.png)
+* [screenshot testikattavuudesta](https://github.com/J-Uhero/ot-harjoitustyo/blob/master/laskarit/viikko2/nayttokuva-2021-3-30-kello-23.40.13.png)
 #### Harjoitustyö
 * [harjoitustyön vaatimusmäärittely](https://github.com/J-Uhero/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 * [harjoitustyön työtuntikirjanpito](https://github.com/J-Uhero/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
