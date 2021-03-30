@@ -29,4 +29,8 @@ numerovihjeillä, missä laudan ruuduissa on miinoja osumatta itse sellaiseen.
 * Käyttäjien tiedot tallennetaan paikallisesti tietokantana koneen muistiin.
 * Pelillä on graafinen käyttöliittymä, joka muodostaa peliruudukon ja muut tarvittavat
   napit ja valikot (toteutetaan Tkinterillä tai Pygamella).
+  
+## Kehitysideoita
+* Erilaisia vaikeustasoja ja kenttiä.
+* Graafista ulkoasua voi kehittää persoonalliseen suuntaan.
 
