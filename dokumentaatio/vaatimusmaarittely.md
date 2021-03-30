@@ -4,6 +4,7 @@
 Sovelluksessa on tarkoitus toteuttaa perustoiminnallisuudeltaan klassinen Miinaharava-peli.
 Pelissä painetaan ruudukon ruutuja ja yritetään kartoittaa niistä saatavilla
 numerovihjeillä, missä laudan ruuduissa on miinoja osumatta itse sellaiseen.
+
 ## Käyttäjäroolit
 * sovelluksessa on vain normaaleja käyttäjiärooleja, joilla voi pelata peliä
   ja kirjata omia tuloksia ylös. Erillistä ylläpitokäyttäjäroolia ei tarvita.
@@ -27,5 +28,5 @@ numerovihjeillä, missä laudan ruuduissa on miinoja osumatta itse sellaiseen.
   laitoksen koneita, joissa on cubbli-linux-käyttöjärjestelmä.
 * Käyttäjien tiedot tallennetaan paikallisesti tietokantana koneen muistiin.
 * Pelillä on graafinen käyttöliittymä, joka muodostaa peliruudukon ja muut tarvittavat
-  napit ja valikot (toteutetaan Tkinterillä tai Pygamella)
+  napit ja valikot (toteutetaan Tkinterillä tai Pygamella).
 
