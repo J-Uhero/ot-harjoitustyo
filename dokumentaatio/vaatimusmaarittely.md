@@ -31,9 +31,10 @@ kaikki miinat on kartoitettu ja merkattu ja muut ruudut avattu.
   napit ja valikot (toteutetaan Tkinterillä tai Pygamella).
   
 ## Kehitysideoita
-* Erilaisia vaikeustasoja eli pelaaja voi valita peliruudukon koon ja miinojen määrän.
-* Vierekkäisten tyhjien ruutujen ja niiden viereisten numeroruutujen automaattinen.
+* Erilaisia vaikeustasoja voi lisätä eli pelaaja voi valita peliruudukon koon ja miinojen määrän.
+* Vierekkäisten tyhjien ruutujen ja niiden viereisten numeroruutujen automaattinen
   aukeaminen painettaessa yhtä tyhjää ruutua pelitahdin jouhevoittamiseksi.
-* Graafista ulkoasua voi kehittää persoonalliseen suuntaan.
+* Graafista ulkoasua voi kehittää persoonalliseen suuntaan ja siitä voi tehdä myös osittain 
+  asetuksista käsin säädettävän esim. värityksen osalta.
 * Kentät voivat poiketa myös muodoltaan.
 
