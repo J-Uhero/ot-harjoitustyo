@@ -10,7 +10,6 @@ numerovihjeillä, missä laudan ruuduissa on miinoja osumatta itse sellaiseen.
   ja kirjata omia tuloksia ylös. Erillistä ylläpitokäyttäjäroolia ei tarvita.
 
 ## Toiminnallisuudet
-* Käyttäjä voi valita pelin vaikeustason eli peliruudukon koon ja miinojen määrän.
 * Peli arpoo miinoja ruudukon eri kohtiin.
 * Pelaajan ensimmäisenä painamassa peliruudussa ei voi osua vielä miinaan.
 * Miinojen vieressä olevissa ruuduissa kerrotaan numerolla, montaako miinaa ruutu
@@ -31,6 +30,9 @@ numerovihjeillä, missä laudan ruuduissa on miinoja osumatta itse sellaiseen.
   napit ja valikot (toteutetaan Tkinterillä tai Pygamella).
   
 ## Kehitysideoita
-* Erilaisia vaikeustasoja ja kenttiä.
+* Erilaisia vaikeustasoja eli pelaaja voi valita peliruudukon koon ja miinojen määrän
+* Vierekkäisten tyhjien ruutujen ja niiden viereisten numeroruutujen automaattinen
+  aukeaminen painettaessa yhtä tyhjää ruutua pelitahdin jouhevoittamiseksi
 * Graafista ulkoasua voi kehittää persoonalliseen suuntaan.
+* Kentät voivat poiketa myös muodoltaan
 
