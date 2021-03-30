@@ -1,5 +1,5 @@
-# Työaikakirjanpito
+# Työtuntikirjanpito
 
 Päivä | Aika (h) | Mitä tein
 ------|----------|----------
-30.03.| 2 h      | Tein alustavan vaatimusmäärittelyn ja työaikakirjanpito-tiedosto
+30.03.| 2     | Tein alustavan vaatimusmäärittelyn ja työtuntikirjanpito-tiedoston
