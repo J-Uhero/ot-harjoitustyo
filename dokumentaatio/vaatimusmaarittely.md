@@ -8,7 +8,7 @@ kaikki miinat on kartoitettu ja merkattu ja muut ruudut avattu.
 
 ## Käyttäjäroolit
 * sovelluksessa on vain normaaleja käyttäjärooleja, joilla voi pelata peliä
-  ja kirjata omia tuloksia ylös. Erillistä ylläpitokäyttäjäroolia ei tarvita.
+  ja kirjata omia tuloksia ylös. Erillistä ylläpitokäyttäjäroolia ei tarvittane.
 
 ## Toiminnallisuudet
 * Peli arpoo miinoja ruudukon eri kohtiin.
