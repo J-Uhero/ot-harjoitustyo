@@ -6,7 +6,22 @@ Peli suoritetaan komennolla:
 ```bash
 poetry run invoke start
 ```
-
+Testien ajaminen onnistuu komennolla:
+```bash
+poetry run invoke test
+```
+Teskikattavuutta voi testata komennolla:
+```bash
+poetry run invoke coverage
+```
+Kattavuusraportin voi tulostaa komennolla:
+```bash
+poetry run invoke coverage-report
+```
+Kattavuusraportista saa html-version komennolla:
+```bash
+poetry run invoke coverage-html
+```
 ### Dokumentaatio
 * [harjoitustyön vaatimusmäärittely](https://github.com/J-Uhero/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 * [harjoitustyön työtuntikirjanpito](https://github.com/J-Uhero/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
