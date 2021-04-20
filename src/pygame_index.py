@@ -1,7 +1,7 @@
 import pygame as pg
-from view_grid import ViewGrid
-# from game_view import GameView
-from game_loop import GameLoop
+from services.view_grid import ViewGrid
+# from services.game_view import GameView
+from ui.game_loop import GameLoop
 from difficulty import Difficulty
 
 def main():

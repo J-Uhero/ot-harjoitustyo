@@ -1,4 +1,4 @@
-from view_grid import ViewGrid
+from services.view_grid import ViewGrid
 from difficulty import Difficulty
 
 # tämän tekstikäyttöliittymän on tarkoitus olla väliaikainen ratkaisu ohjelmalogiikan testaamiseen,

@@ -1,5 +1,5 @@
 import unittest
-from view_grid import ViewGrid
+from selvices.view_grid import ViewGrid
 from difficulty import Difficulty
 
 class TestView(unittest.TestCase):
@@ -21,7 +21,7 @@ class TestView(unittest.TestCase):
         content = self.random_view.coordinates(4,4)
         self.assertEqual(content, "0")
 
-    def test_if_flags_on_mines_leads_to_victory(self):
+    def test_if_flags_on_mines_and_squares_opened_leads_to_victory(self):
         self.random_view.push_left_button(0,0)
         mine_locations = self.random_view.grid.give_mines_locations()
 
