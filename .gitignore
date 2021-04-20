@@ -1,6 +1,9 @@
+.vscode
 src/tests/__pycache__
 .pytest_cache
-htmlcov/
+htmlcov
 .DS_Store
 __pycache__
 .coverage
+*.py[cod]
+*Spy.class
