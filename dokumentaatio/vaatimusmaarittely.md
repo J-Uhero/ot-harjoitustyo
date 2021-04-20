@@ -21,8 +21,9 @@ kaikki miinat on kartoitettu ja merkattu ja muut ruudut avattu.
 * Jos pelaaja saa kaikki miinat merkattua, kirjataan hänen tulos ylös. Pelaaja voi antaa
   oman nimimerkin, jonka lisäksi tallennetaan kauan pelin läpäisy kesti, vaikeustaso ja
   päivämäärä ja kellonaika.
-* Pelissä on kello, joka käynnistyy, kun painetaan ensimmäistä ruutua *(lisätty)*
-* Pelissä on voi aloittaa uuden pelin käynnistämättä sitä uudestaan (painamalla naamaa) *(lisätty)*
+* Pelissä on kello, joka käynnistyy, kun painetaan ensimmäistä ruutua. *(lisätty)*
+* Pelissä on voi aloittaa uuden pelin käynnistämättä sitä uudestaan (naamaa painamalla). *(lisätty)*
+* Kun pelaaja osuu miinaa, peli näyttää, jos jokin lippu oli paikassa, jossa ei ollut miinaa. *(lisätty)*
 
 ## Toimintaympäristö ja rajoitteet
 * Peli toteutetaan Pythonilla (vähintään versio 3.6).
