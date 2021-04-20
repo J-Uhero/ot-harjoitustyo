@@ -18,6 +18,12 @@ Kattavuusraportin voi tulostaa komennolla:
 ```bash
 poetry run invoke coverage-report
 ```
+Pylint-arvioinnin koodista saa komennolla:
+```bash
+poetry run invoke lint
+```
+### Ohjeet
+Kun käynnistät pelin pelin suorituskomennolla voit aluksi valita, haluatko pelata peliä graafisella käyttöliittymällä vai tekstikäyttöliittymällä. Komennolla **"1"** voit käynnistää graafisen käyttöliittymän ja komennolla **"2"** voit pelata tekstikäyttöliittymällä. Graafinen käyttöliittymä käyttää toimiakseen pygame-kirjastoa, jonka voi asentaa komennolla **"pip3 install pygame"**, jos sitä ei ole valmiiksi asennettuna. Peli päättyy, kun kaikki pommit on kartoitettu lipuilla tai kun pelaaja osuu miinaan. Graafista käyttöliittymää käyttäessä, peli tulee käynnistää tällöin uudestaan, jos haluaa jatkaa pelaamista. Tekstikäyttöliittymän on tarkoitus olla vain väliaikainen ratkaisu, mutta pidän sen pelissä toistaiseksi mukana, vaikkei sitä löytyne lopullisesta pelistä. 
 
 ### Dokumentaatio
 * [harjoitustyön vaatimusmäärittely](https://github.com/J-Uhero/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
