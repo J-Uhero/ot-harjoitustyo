@@ -11,4 +11,4 @@ Päivä | Aika (h) | Mitä tein
 16.4.| 11| Viimeinen vänkäys tkinterin kanssa ja siirtyminen pygamen pariin eli aloitin uuden käyttöliittymän tekemisen pygamella. Suunnittellin ohjelman rakennetta ja muotoilin samalla luokkakaaviota. Korjailin ohjelmalogiikka-tiedostoani ja jaoin sen luokkakohtaisesti osiin niin kuin oltiin ohjeistettu. Tein graafista käyttöliittymää varten kuvia ja sain lopulta pelin toimimaan toivotulla tavalla pygamea käyttäen.
 17.4.|10|Päivitin graafisen käyttöliittymän lisäksi tekstikäyttöliittymäni toimimaan uusittujen luokkieni kanssa. Tein peliini uutena toiminnallisuutena pelin päättymisen, kun osuu miinaan tai saa kaikki liput paikoilleen. Tein myös lisää kuva-spriteja päättymistä varten, jossa kaikki ei-peitetyt miinat tulevat näkyviin. Päivitin testejäni. Olen muovaillut hakemistorakennetta ja kokeillut sovelluksen toimivuutta
 
-yht.|31|
+yht. 39,5 h
