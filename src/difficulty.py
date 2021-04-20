@@ -36,7 +36,7 @@ class Difficulty:
         self._mines = 99
         self._degree = "hard"
 
-    def customizes(self, height, width, mines):
+    def customized(self, height, width, mines):
         self._height = height
         self._width = width
         self._mines = mines

@@ -2,7 +2,7 @@ from view_grid import ViewGrid
 from difficulty import Difficulty
 
 # tämän tekstikäyttöliittymän on tarkoitus olla väliaikainen ratkaisu ohjelmalogiikan testaamiseen,
-# ennen kuin saan tehtyä toimivan graafisen käyttöliittymän.
+# ennen kuin saan tehtyä kokonaisuudessaan toimivan graafisen käyttöliittymän.
 
 class Ui:
     def __init__(self):

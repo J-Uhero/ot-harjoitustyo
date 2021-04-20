@@ -4,7 +4,8 @@ import os
 pic_names = {" ": "unopened_grey.png", "0": "empty_grey.png", "1": "one_grey.png",
              "2": "two_grey.png", "3": "three_grey.png", "4": "four_grey.png",
              "5": "five_grey.png", "6": "six_grey.png", "7": "seven_grey.png",
-             "8": "eight_grey.png", "x": "mine_grey.png", "f": "flag_grey.png"}
+             "8": "eight_grey.png", "x": "mine_grey.png", "f": "flag_grey.png",
+             "r": "mine_red.png"}
 
 dirname = os.path.dirname(__file__)
 

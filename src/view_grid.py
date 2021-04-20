@@ -41,14 +41,14 @@ class ViewGrid:
         if self.first_push:
             self.grid = Grid(self.height, self.width, self.mines, (y,x))
             self.first_push = False
-        elif self.view[y][x] != " ":
+        if self.view[y][x] != " ":
             return False 
         value = self.grid.give_coordinate_value(y,x)
         if value == 0:
             self.view[y][x] = "0"
             self.empty_button(y,x)
         elif value == -1:
-            self.view[y][x] = "x"
+            self.view[y][x] = "r" # osumaruutu on taustaltaan punainen
             self.game_over()
             return True
         else:

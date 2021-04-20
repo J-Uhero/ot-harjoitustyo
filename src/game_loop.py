@@ -28,10 +28,6 @@ class GameLoop:
     def _render(self):
         self._gameview._sprites.draw(self._display)
         pg.display.update()
-        status = self._gameview.check_status()
-        if status == 1:
-            
-        
-        
-
-
+        #status = self._gameview.check_status()
+        #if status == 1:
+        #    pass

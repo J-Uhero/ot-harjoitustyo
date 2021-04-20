@@ -1,2 +1,3 @@
 [run]
 source = src
+omit = src/tests/**,src/index.py, src/pytest_index.py,src/ui/miinaharava_teksti_ui.py,src/game_loop.py,src/database_connection.py 

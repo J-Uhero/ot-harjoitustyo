@@ -13,7 +13,7 @@ def main():
     display_width = width * square_size
 
     pg.init()
-    display = pg.display.set_mode((display_height, display_width))
+    display = pg.display.set_mode((display_width, display_height))
     pg.display.set_caption("Miinaharava")
     # display.fill((0,0,0))
     # pg.display.flip()
