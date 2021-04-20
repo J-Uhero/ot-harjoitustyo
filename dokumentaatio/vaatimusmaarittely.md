@@ -11,16 +11,18 @@ kaikki miinat on kartoitettu ja merkattu ja muut ruudut avattu.
   ja kirjata omia tuloksia ylös. Erillistä ylläpitokäyttäjäroolia ei tarvittane.
 
 ## Toiminnallisuudet
-* Peli arpoo miinoja ruudukon eri kohtiin.
-* Pelaajan ensimmäisenä painamassa peliruudussa ei voi osua vielä miinaan.
-* Miinojen vieressä olevissa ruuduissa kerrotaan numerolla, montaako miinaa ruutu
-  koskettaa sivuilla tai kulmillansa.
+* Peli arpoo miinoja ruudukon eri kohtiin. *tehty*
+* Pelaajan ensimmäisenä painamassa peliruudussa ei voi osua vielä miinaan. *tehty*
+* Miinojen vieressä olevissa ruuduissa kerrotaan numerolla, montaako miinaa ruutu 
+  koskettaa sivuilla tai kulmillansa. *tehty*
 * Painettu ruutu paljastaa, onko ruudussa miina, numero vai tyhjää. Ruutuun voi laittaa
-  merkin, jos epäilee, että siinä on miina.
-* Peli loppuu joko kun kaikki miinat on merkattu tai pelaaja osuu miinaan. 
+  merkin, jos epäilee, että siinä on miina. *tehty*
+* Peli loppuu joko kun kaikki miinat on merkattu tai pelaaja osuu miinaan. *tehty ##uusi##*
 * Jos pelaaja saa kaikki miinat merkattua, kirjataan hänen tulos ylös. Pelaaja voi antaa
   oman nimimerkin, jonka lisäksi tallennetaan kauan pelin läpäisy kesti, vaikeustaso ja
   päivämäärä ja kellonaika.
+* Pelissä on kello, joka käynnistyy, kun painetaan ensimmäistä ruutua *(lisätty)*
+* Pelissä on voi aloittaa uuden pelin käynnistämättä sitä uudestaan (painamalla naamaa) *(lisätty)*
 
 ## Toimintaympäristö ja rajoitteet
 * Peli toteutetaan Pythonilla (vähintään versio 3.6).
