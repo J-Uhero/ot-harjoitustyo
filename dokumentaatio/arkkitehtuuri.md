@@ -1,3 +1,3 @@
 # Arkkitehtuuri
  
- ![luokkakaavio] (/dokumentaatio/kuvat/luokkakaavio_ot_harjoitustyo.png)
+ ![luokkakaavio](/kuvat/luokkakaavio_ot_harjoitustyo.png)
