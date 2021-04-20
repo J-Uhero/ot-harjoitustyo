@@ -1,4 +1,5 @@
-from services.miinaharava_service import View
+from view_grid import ViewGrid
+from difficulty import Difficulty
 
 # tämän tekstikäyttöliittymän on tarkoitus olla väliaikainen ratkaisu ohjelmalogiikan testaamiseen,
 # ennen kuin saan tehtyä toimivan graafisen käyttöliittymän.
@@ -6,11 +7,12 @@ from services.miinaharava_service import View
 class Ui:
     def __init__(self):
         self.game_view = None
-        self.height = 9
-        self.width = 9
+        self.difficulty = Difficulty()
+        self.height = self.difficulty.height()
+        self.width = self.difficulty.width()
 
     def start(self):
-        self.game_view = View(self.height, self.width, 10)
+        self.game_view = ViewGrid(self.difficulty)
         self.play_game()
 
     def play_game(self):
@@ -18,11 +20,15 @@ class Ui:
         print("miinaharava")
         print(f"size of grid: {self.width} x {self.height}")
         self.main_loop()
-    
+
     def print_game_viewgrid(self):
+        first_line = "  |"
+        for i in range(self.width):
+            first_line += f" {i} |"
+        print(first_line)
         line = "---" + "----" * self.width
-        print("  | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |")
         print(line)
+
         for i in range(self.height):
             row = f"{i} |"
             for j in range(self.width):
@@ -37,10 +43,9 @@ class Ui:
             print("1: new game")
             print("0: quit")
             command = input("command: ")
-
             if command == "0":
-                return
-            elif command == "1":
+                break
+            if command == "1":
                 self.game_loop()
 
     def ask_coordinates(self):
@@ -50,7 +55,7 @@ class Ui:
             return (row, seg)
         except:
             print("invalid command")
-    
+
     def game_loop(self):
         while True:
             print()
@@ -58,6 +63,8 @@ class Ui:
             print("unopened squares:", self.game_view.give_unopened())
             print()
             self.print_game_viewgrid()
+            if self.status() is False:
+                break
             print()
             print("1: open a square")
             print("2: place/displace a flag")
@@ -66,22 +73,18 @@ class Ui:
 
             if command == "0":
                 return
-            elif command == "1":
-                x, y = self.ask_coordinates()
-                self.game_view.push_left_button(x, y)
-            elif command == "2":
-                x, y = self.ask_coordinates()
-                self.game_view.push_right_button(x, y)
+            coord_x, coord_y = self.ask_coordinates()
+            if command == "1":
+                self.game_view.push_left_button(coord_x, coord_y)
+            if command == "2":
+                self.game_view.push_right_button(coord_x, coord_y)
 
-            if self.game_view.game_over():
-                print()
-                self.print_game_viewgrid()
-                print()
-                print("oh! you hit to a mine! game over")
-                return
-            if self.game_view.victory():
-                print()
-                self.print_game_viewgrid()
-                print()
-                print("congratulations! you win!")
-                return
+    def status(self):
+        status = self.game_view.give_game_status()
+        if status == "game_over":
+            print("game over")
+            return False
+        if status == "victory":
+            print("victory!")
+            return False
+        return True

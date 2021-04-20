@@ -1,21 +1,17 @@
-import tkinter
-#from ui.miinaharava_ui import Ui
 import ui.miinaharava_teksti_ui as teksti_ui
+import pygame_index
 
 def main():
-    #window = tkinter.Tk()
-    #window.title("Miinaharava")
-    #ui = Ui(window)
-    #ui.start()
-    #window.mainloop()
-    
-    #tarkoitukseni on luoda ohjelmaan graafinen käyttöliittymä, mutten ole vielä saanut sitä tehtyä:
-    #ongelmia oli yrittäessäni tehdä tkinterillä kahden loopin sisällä kahden eri funktionaalisuuden nappuloita.
-    #tein nyt ohjelmalogiikan testaamista varten yksinkertaisen tekstikäyttöliittymän, mutta sitä ei ole tarkoitus
-    #sisällyttää lopulliseen ohjelmaan.
 
-    ui = teksti_ui.Ui()
-    ui.start()
+    print("haluatko pelata graafisella käyttöliittymällä vai tekstikäyttöliittymällä?")
+    print("1: graafinen")
+    print("2: teksti")
+    command = input("komento: ")
+    if command == "1":
+        pygame_index.main()
+    elif command == "2":
+        ui = teksti_ui.Ui()  
+        ui.start()
 
 if __name__ == "__main__":
     main()
