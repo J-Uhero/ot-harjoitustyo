@@ -1,6 +1,6 @@
 # Ohjelmistotekniikan harjoitustyö
 ## Miinaharava
-Miinaharava-pelissä on tarkoitus avata peliruudukon ruutuja ja niistä saatavien numerovihjeiden avulla kartoittaa peliruudukossa olevat miinat. Ruutujen numerovihjeet kertovat, kuinka montaa eri miinaa ruudun ympärillä sijaitsee, ja miinojen kohdalle on asetettava lippuja, joita on käytettävänä yhtä monta kuin on miinoja. Pelin läpäisee, kun kaikki miinat saa kartoitettua ja muut ruudut avattua osumatta itse miinaan.
+Miinaharava-pelissä on tarkoitus avata peliruudukon ruutuja ja niistä saatavien numerovihjeiden avulla kartoittaa peliruudukossa olevat miinat. Ruutujen numerovihjeet kertovat, kuinka monta miinaa ruudun ympärillä sijaitsee. Miinojen kohdalle on asetettava lippuja, joita on käytettävänä yhtä monta kuin miinoja on. Pelin läpäisee, kun kaikki miinat saa kartoitettua ja muut ruudut avattua osumatta itse miinaan.
 
 Peli suoritetaan komennolla:
 ```bash
@@ -30,7 +30,7 @@ poetry run invoke lint
 ### Ohjeet
 Peli käynnistämiseen tarvitaan Poetry. Mikäli Poetryä ei ole entuudestaan asennettuna, sen asentamiseen löydät ohjeet vaikka [kurssimateriaalista](https://ohjelmistotekniikka-hy.github.io/python/poetry). Voit tarkistaa, onko poetry asennettuna komennolla "poetry --version".
 
-Peli vaatii toimiakseen Pythonista vähintään version 3.6 ja se käyttää Pythonin Pygame- ja Pygame Gui -kirjastoja. Voit asentaa ohjelman riippuvuudet poetryn avulla komennolla:
+Peli vaatii toimiakseen Pythonista vähintään version 3.6 ja se käyttää Pythonin Pygame ja Pygame Gui -kirjastoja. Voit asentaa ohjelman riippuvuudet poetryn avulla komennolla:
 ```bash
 poetry install
 ```
