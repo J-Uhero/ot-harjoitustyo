@@ -1,5 +1,5 @@
 import unittest
-from selvices.view_grid import ViewGrid
+from services.view_grid import ViewGrid
 from difficulty import Difficulty
 
 class TestView(unittest.TestCase):
