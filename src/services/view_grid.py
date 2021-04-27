@@ -8,10 +8,10 @@ class ViewGrid:
         self.mines = difficulty.mines()
         self.flags = difficulty.mines()
         self.view = self.create_view()
-        self.first_push = True
+        self._first_push = True
         self.grid = None
         self.unopened = self.height * self.width
-        self.game_status = None
+        self._game_status = "ready"
 
     def create_view(self):
         view = []
@@ -38,9 +38,9 @@ class ViewGrid:
         return True
 
     def push_left_button(self, y, x):
-        if self.first_push:
+        if self._first_push:
             self.grid = Grid(self.height, self.width, self.mines, (y,x))
-            self.first_push = False
+            self.first_push()
         if self.view[y][x] != " ":
             return False 
         value = self.grid.give_coordinate_value(y,x)
@@ -70,15 +70,19 @@ class ViewGrid:
             if self.coordinates(mine_loc[0], mine_loc[1]) == " ":
                 self.view[mine_loc[0]][mine_loc[1]] = "x"
 
+    def first_push(self):
+        self._first_push = False
+        self._game_status = "started"
+
     def game_over(self):
-        self.game_status = "game_over"
+        self._game_status = "game_over"
         self.open_remaining_mines()
 
     def victory(self):
-        self.game_status = "victory"
+        self._game_status = "victory"
 
     def give_game_status(self):
-        return self.game_status
+        return self._game_status
 
     def give_unopened(self):
         return self.unopened

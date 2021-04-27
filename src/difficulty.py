@@ -5,7 +5,7 @@ class Difficulty:
         self._mines = None
         self._degree = None
         self.easy()
-    
+
     def height(self):
         return self._height
 
@@ -41,5 +41,3 @@ class Difficulty:
         self._width = width
         self._mines = mines
         self._degree = "customized"
-
-

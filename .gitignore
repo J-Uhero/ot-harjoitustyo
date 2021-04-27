@@ -1,5 +1,6 @@
 .vscode
 src/tests/__pycache__
+src/pygame_gui_testi.py
 .pytest_cache
 htmlcov
 .DS_Store

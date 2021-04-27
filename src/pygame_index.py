@@ -1,23 +1,16 @@
 import pygame as pg
-from services.view_grid import ViewGrid
 # from services.game_view import GameView
 from ui.game_loop import GameLoop
 from difficulty import Difficulty
 
 def main():
     difficulty = Difficulty()
-    height = difficulty.height()
-    width = difficulty.width()
+    #difficulty.medium()
     square_size = 30
-    display_height = height * square_size
-    display_width = width * square_size
 
     pg.init()
-    display = pg.display.set_mode((display_width, display_height))
-    pg.display.set_caption("Miinaharava")
-    # display.fill((0,0,0))
-    # pg.display.flip()
-    # gameview = GameView(difficulty, square_size)
+
+    display = None  
     gameloop = GameLoop(display, difficulty, square_size)
     gameloop.start()
 

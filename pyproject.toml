@@ -8,6 +8,7 @@ authors = ["J-Uhero <juho.herranen@gmail.com>"]
 python = "^3.6"
 invoke = "^1.5.0"
 pygame = "^2.0.1"
+python-dotenv = "^0.17.0"
 
 [tool.poetry.dev-dependencies]
 coverage = "^5.5"

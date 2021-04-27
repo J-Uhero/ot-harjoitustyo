@@ -53,7 +53,7 @@ class Ui:
             row = int(input("give an index of a row: "))
             seg = int(input("give an index of a column: "))
             return (row, seg)
-        except:
+        except TypeError:
             print("invalid command")
 
     def game_loop(self):
