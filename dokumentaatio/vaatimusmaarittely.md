@@ -23,7 +23,7 @@ kaikki miinat on kartoitettu ja merkattu ja muut ruudut avattu.
   päivämäärä ja kellonaika.
 * Pelissä on kello, joka käynnistyy, kun painetaan ensimmäistä ruutua. *tehty **uusi***
 * Pelissä on voi aloittaa uuden pelin käynnistämättä sitä uudestaan (naamaa painamalla). *tehty (nappi on, naama vielä puuttuu) **uusi*** 
-* Kun pelaaja osuu miinaa, peli näyttää, jos jokin lippu oli paikassa, jossa ei ollut miinaa. *(lisätty)*
+* Kun pelaaja osuu miinaa, peli näyttää, jos jokin lippu oli paikassa, jossa ei ollut miinaa.
 
 ## Toimintaympäristö ja rajoitteet
 * Peli toteutetaan Pythonilla (vähintään versio 3.6).
