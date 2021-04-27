@@ -8,5 +8,5 @@ Tällä hetkellä olen ottanut hakemistorakenteeseen mallia sekä Sokoban että 
 
 ### Sekvenssikaavio
 Sekvenssikaavio kuvaa ohjelman käynnistymisen alkua ja on kahdessa osassa luokkien suuren määrän vuoksi.
-![Sekvenssikaavio1](.kuvat/sekvenssikaavio_ot_harjoitustyo_viikko5_1.png)
-![Sekvenssikaavio2](.kuvat/sekvenssikaavio_ot_harjoitustyo_viikko5_2.png)
+![Sekvenssikaavio1](./kuvat/sekvenssikaavio_ot_harjoitustyo_viikko5_1.png)
+![Sekvenssikaavio2](./kuvat/sekvenssikaavio_ot_harjoitustyo_viikko5_2.png)
