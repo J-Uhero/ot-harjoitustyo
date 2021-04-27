@@ -21,8 +21,8 @@ kaikki miinat on kartoitettu ja merkattu ja muut ruudut avattu.
 * Jos pelaaja saa kaikki miinat merkattua, kirjataan hänen tulos ylös. Pelaaja voi antaa
   oman nimimerkin, jonka lisäksi tallennetaan kauan pelin läpäisy kesti, vaikeustaso ja
   päivämäärä ja kellonaika.
-* Pelissä on kello, joka käynnistyy, kun painetaan ensimmäistä ruutua. *(lisätty)*
-* Pelissä on voi aloittaa uuden pelin käynnistämättä sitä uudestaan (naamaa painamalla). *(lisätty)*
+* Pelissä on kello, joka käynnistyy, kun painetaan ensimmäistä ruutua. *tehty **uusi***
+* Pelissä on voi aloittaa uuden pelin käynnistämättä sitä uudestaan (naamaa painamalla). *tehty (nappi on, naama vielä puuttuu) **uusi*** 
 * Kun pelaaja osuu miinaa, peli näyttää, jos jokin lippu oli paikassa, jossa ei ollut miinaa. *(lisätty)*
 
 ## Toimintaympäristö ja rajoitteet
