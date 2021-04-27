@@ -28,4 +28,10 @@ poetry run invoke lint
 * [arkkitehtuurikuvaus](https://github.com/J-Uhero/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 ### Ohjeet
-Kun pelin käynnistää pelin suorituskomennolla, voi aluksi valita, haluaako peliä pelata graafisella käyttöliittymällä vai tekstikäyttöliittymällä. Komennolla **"1"** voi käynnistää graafisen käyttöliittymän ja komennolla **"2"** voi pelata tekstikäyttöliittymällä. Graafinen käyttöliittymä käyttää toimiakseen pygame-kirjastoa, jonka voi asentaa komennolla **"pip3 install pygame"**, jos sitä ei ole valmiiksi asennettuna. Peli päättyy, kun kaikki pommit on kartoitettu lipuilla tai kun pelaaja osuu miinaan. Graafista käyttöliittymää käyttäessä, peli tulee käynnistää tällöin uudestaan, jos haluaa jatkaa pelaamista. Tekstikäyttöliittymän on tarkoitus olla vain väliaikainen ratkaisu, mutta pidän sen pelissä toistaiseksi mukana, vaikkei sitä löytyne lopullisesta pelistä. 
+Peli käynnistämiseen tarvitaan Poetry. Mikäli Poetryä ei ole entuudestaan asennettuna, sen asentamiseen löydät ohjeet vaikka [kurssimateriaalista](https://ohjelmistotekniikka-hy.github.io/python/poetry). Voit tarkistaa, onko poetry asennettuna komennolla "poetry --version".
+
+Peli vaatii toimiakseen Pythonista vähintään version 3.6 ja se käyttää Pythonin Pygame- ja Pygame Gui -kirjastoja. Voit asentaa ohjelman riippuvuudet poetryn avulla komennolla:
+```bash
+poetry install
+```
+Kun pelin käynnistää pelin suorituskomennolla ("poetry run invoke start"), voi aluksi valita, haluaako peliä pelata graafisella käyttöliittymällä vai tekstikäyttöliittymällä. Komennolla **"1"** voi käynnistää graafisen käyttöliittymän ja komennolla **"2"** voi pelata tekstikäyttöliittymällä. Pelaaminen graafisella käyttäliittymällä on suositeltavaa. Peli päättyy, kun kaikki pommit on kartoitettu lipuilla tai kun pelaaja osuu miinaan. 
