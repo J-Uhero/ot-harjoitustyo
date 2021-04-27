@@ -2,7 +2,7 @@
 ## Miinaharava
 Miinaharava-pelissä on tarkoitus avata peliruudukon ruutuja ja niistä saatavien numerovihjeiden avulla kartoittaa peliruudukossa olevat miinat. Ruutujen numerovihjeet kertovat, kuinka monta miinaa ruudun ympärillä sijaitsee. Miinojen kohdalle on asetettava lippuja, joita on käytettävänä yhtä monta kuin miinoja on. Pelin läpäisee, kun kaikki miinat saa kartoitettua ja muut ruudut avattua osumatta itse miinaan.
 
-###Versiot
+### Versiot
 [first release](https://github.com/J-Uhero/ot-harjoitustyo/releases/tag/viikko5)
 
 Peli suoritetaan komennolla:
