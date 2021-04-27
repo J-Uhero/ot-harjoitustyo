@@ -4,7 +4,7 @@ from difficulty import Difficulty
 
 def main():
     difficulty = Difficulty()
-    #difficulty.medium()
+    difficulty.medium()
     square_size = 30
 
     pg.init()
