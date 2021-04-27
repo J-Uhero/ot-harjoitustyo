@@ -1,5 +1,4 @@
 import pygame as pg
-# from services.game_view import GameView
 from ui.game_loop import GameLoop
 from difficulty import Difficulty
 

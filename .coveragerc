@@ -1,3 +1,3 @@
 [run]
 source = src
-omit = src/tests/**,src/index.py, src/pytest_index.py,src/ui/**y,src/database_connection.py 
+omit = src/tests/**,src/index.py,src/pytest_index.py,src/ui/**y,src/pygame_gui_testi.py,src/config.py

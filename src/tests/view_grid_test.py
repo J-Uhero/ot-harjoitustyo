@@ -7,7 +7,6 @@ class TestView(unittest.TestCase):
         self.difficulty = Difficulty()
         self.random_view = ViewGrid(self.difficulty)
 
-
     def test_the_view_is_empty_at_the_beginning(self):
         empty = True
         for i in self.random_view.view:
@@ -35,3 +34,25 @@ class TestView(unittest.TestCase):
         flags = self.random_view.give_flags()
         unopened = self.random_view.give_unopened()
         self.assertEqual((status, flags, unopened), ("victory",0,0))
+
+    def test_flag_cant_be_opened(self):
+        self.random_view.push_right_button(0, 0)
+        status1 = self.random_view.coordinates(0, 0)
+        self.random_view.push_left_button(0, 0)
+        status2 = self.random_view.coordinates(0, 0)
+        self.random_view.push_right_button(0, 0)
+        status3 = self.random_view.coordinates(0, 0)
+        self.random_view.push_left_button(0, 0)
+        status4 = self.random_view.coordinates(0, 0)
+
+        self.assertEqual((status1, status2, status3, status4), ("f", "f", " ", "0"))
+
+    def test_flags_cant_be_placed_if_they_all_are_used(self):
+        flags = self.random_view.give_flags()
+        for i in range(2):
+            for j in range(5):
+                self.random_view.push_right_button(i, j)
+        self.random_view.push_right_button(3, 6)
+        status = self.random_view.coordinates(3, 6)
+
+        self.assertEqual((flags, status), (10, " "))
