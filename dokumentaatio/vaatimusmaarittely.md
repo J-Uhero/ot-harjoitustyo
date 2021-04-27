@@ -17,7 +17,7 @@ kaikki miinat on kartoitettu ja merkattu ja muut ruudut avattu.
   koskettaa sivuilla tai kulmillansa. *tehty*
 * Painettu ruutu paljastaa, onko ruudussa miina, numero vai tyhjää. Ruutuun voi laittaa
   merkin, jos epäilee, että siinä on miina. *tehty*
-* Peli loppuu joko kun kaikki miinat on merkattu tai pelaaja osuu miinaan. *tehty **uusi***
+* Peli loppuu joko kun kaikki miinat on merkattu tai pelaaja osuu miinaan. *tehty*
 * Jos pelaaja saa kaikki miinat merkattua, kirjataan hänen tulos ylös. Pelaaja voi antaa
   oman nimimerkin, jonka lisäksi tallennetaan kauan pelin läpäisy kesti, vaikeustaso ja
   päivämäärä ja kellonaika.
