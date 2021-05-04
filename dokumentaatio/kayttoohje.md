@@ -1,5 +1,6 @@
 
-### Ohjeet
+# Käyttöhjeet
+## Asennus
 Peli käynnistämiseen tarvitaan Poetry. Mikäli Poetryä ei ole entuudestaan asennettuna, sen asentamiseen löydät ohjeet vaikka [OhTe:n kurssimateriaalista](https://ohjelmistotekniikka-hy.github.io/python/poetry). Voit tarkistaa, onko poetry asennettuna komennolla "poetry --version".
 
 Peli vaatii toimiakseen Pythonista vähintään [version 3.6](https://www.python.org/downloads/) ja se käyttää Pythonin Pygame ja Pygame Gui -kirjastoja. Voit asentaa ohjelman riippuvuudet poetryn avulla komennolla:
