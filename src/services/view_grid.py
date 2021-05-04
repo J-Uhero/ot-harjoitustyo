@@ -51,7 +51,7 @@ class ViewGrid:
     def push_right_button(self, y, x):
         """Muokkaa pelinäkymätietoja, kun tiettyyn peliruudukon koordinaattia on
         painettu hiiren oikealla painikkeella. Oikealla painikkeella lisätään peliruudukkoon
-        lippuja, joita kuvaa f-symboli.
+        lippuja, joita kuvaa "f"-merkkijono.
 
         Args:
             y (int): y-koordinaatti
@@ -79,7 +79,10 @@ class ViewGrid:
         """Muokkaa pelinäkymätietoja, kun tiettyyn peliruudukon koordinaattia on
         painettu hiiren vasemmalla painikkeella. Vasemmalla painikkeella avataan peliruutuja.
         Jos painallus on pelin ensimmäinen, peli luo Grid-luokan kuvaamaan pelin miinojen ja 
-        numeroiden sijainteja.
+        numeroiden sijainteja ja näkymäruudukkoa päivitetään Grid-luokan mukaan.
+        "<space>"-merkki kuvaa avaamatonta ruutua, "0" tyhjää ruutua numerot 1-8 merkkijonoina
+        kuvaavat numeroruutuja, "x" on miina, "r" punainen miina, johon pelaaja on osunut,
+        "f" on lippu ja "w" on väärässä kohtaa ollut lippu.
 
         Args:
             y (int): y-koordinaatti

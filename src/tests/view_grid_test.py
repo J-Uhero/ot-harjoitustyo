@@ -56,3 +56,17 @@ class TestView(unittest.TestCase):
         status = self.random_view.coordinates(3, 6)
 
         self.assertEqual((flags, status), (10, " "))
+
+    def test_mines_are_opened_when_game_over(self):
+        self.random_view.push_left_button(0, 0)
+        mines = self.random_view.grid.give_mines_locations()
+        self.random_view.push_left_button(mines[0][0], mines[0][1])
+        status_list = []
+        for i in range(0,len(mines)):
+            status_list.append(self.random_view.coordinates(mines[i][0], mines[i][1]))
+        print(mines)
+        print(status_list)
+        self.assertEqual(status_list, ["r","x","x","x","x","x","x","x","x","x"])
+        
+
+    
