@@ -13,5 +13,7 @@ Päivä | Aika (h) | Mitä tein
 25.4.| 5 | Asensin ja tutustuin entuudestaa ntuntemattomaan Pygame Gui -kirjastoon, jota aion käyttää apuna käyttöliittymän luonnissa toiminnallisten nappuloiden tekoon. Lähdin muokkaamaan ja laajentamaan luokkarakennettani ja tekemään pelinäyttöön eri tasoja, joille aion sijoittaa toiminnallisia nappuloita.
 26.4. | 7 | Lähdin luomaan luokkia sqlite3-tietokantayhteyttä varten oppimateriaalin esimerkkien pohjalta. Tein testiluokan pygame guin kokeilua varten ja sain tehtyä toiminnallisia nappeja ja tekstinäyttöjä.
 27.4. | 10 | Aloin muokkaamaan varsinaista ohjelmaani ja lisättyä siihen new game -napin, josta tosin puuttuu vielä hymynaama vaihtuvia kuvia sisältävän nappulan luomisen osottauduttua yllättävän haastavaksi. Tein ohjelmaani toimivan kellonnäytön, joka näyttää peliajan sekuntteina ja toisen näytön kertomaan jäljellä olevien lippujen määrän. Jouduin muokkailemaan myös aiempia luokkiani saadakseni homman toimimaan. Päivitin testejä.
+3.5. | 2 | Tein uuden spiriten kuvaamaan pelin päätyttyä väärässä kohdassa sijaitsevaa lippua ja lisäsin pelin sovelluslogiikkaan toiminnallisuuden, jolla nämä ruudut lisätään pelinäkymään.
+4.5. | 9 | Pelin päivittämistä. Peliin luotu valikko, jolla voi vaihtaa pelin vaikeustasoja. Kokeilin myös eri Pygame Guin ominaisuuksia, joilla voisin luoda pelin läpäisynäytön/tulosnäytön. Docstring-merkintöjä lisäilty eri kooditiedostoihin. Dokumentaation päivittelyä. Tekstikäyttöliittymä poistettu pelin toiminnallisuuksista.
 
-yht. 60,5 h
+yht. 71,5 h
