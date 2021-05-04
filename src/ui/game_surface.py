@@ -5,6 +5,7 @@ class GameSurface:
         self._height = difficulty.height() * square_size
         self._width = difficulty.width() * square_size
         self._game_surface = pg.Surface((self._width, self._height))
+        self._game_surface.fill((100, 100, 100))
 
     def give_surface(self):
         return self._game_surface

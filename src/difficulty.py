@@ -1,5 +1,11 @@
 class Difficulty:
+    """Luokka, joka kuvaa pelin vaikeustasoa ja sisältää vaikeustasoon
+    vaikuttavia muuttujia ja niiden parametreja.
+    """
     def __init__(self):
+        """Konstruktori, joka alustaa vaikeustasoa ilmentävät muuttujat
+        asettaa oletusarvoisesti vaikeustason helpoksi.
+        """
         self._height = None
         self._width = None
         self._mines = None

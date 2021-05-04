@@ -57,6 +57,14 @@ class GameView:
             return 2
         return 0
 
+    def pause(self):
+        if self._continue_game:
+            self._continue_game = False
+
+    def stop_pause(self):
+        if not self._continue_game:
+            self._continue_game = True
+
     def give_time(self):
         return self._game_clock.give_time_in_seconds()
 

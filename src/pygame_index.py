@@ -4,13 +4,10 @@ from difficulty import Difficulty
 
 def main():
     difficulty = Difficulty()
-    difficulty.medium()
     square_size = 30
 
     pg.init()
-
-    display = None  
-    gameloop = GameLoop(display, difficulty, square_size)
+    gameloop = GameLoop(difficulty, square_size)
     gameloop.start()
 
 if __name__ == "__main__":
