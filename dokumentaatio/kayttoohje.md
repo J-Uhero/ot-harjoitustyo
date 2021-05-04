@@ -14,6 +14,7 @@ poetry run invoke start
 ## Pelaaminen
 
 Suorituskomento avaa pelinäkymän:
+
 ![pelinakyma](./kuvat/miinaharava-nakyma-viikko6-easy.png)
 
 Pelinäkymän vasemmassa yläkulmassa on valikko, josta voit vaihtaa pelin vaikeusastetta. Vaikeusaste vaikuttaa peliruudukon kokoon ja miinojen määrään.
