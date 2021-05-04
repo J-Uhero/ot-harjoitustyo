@@ -1,6 +1,6 @@
 import pygame as pg
 from ui.game_loop import GameLoop
-from difficulty import Difficulty
+from entities.difficulty import Difficulty
 
 def main():
     difficulty = Difficulty()

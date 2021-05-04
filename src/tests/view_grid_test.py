@@ -1,6 +1,6 @@
 import unittest
 from services.view_grid import ViewGrid
-from difficulty import Difficulty
+from entities.difficulty import Difficulty
 
 class TestView(unittest.TestCase):
     def setUp(self):

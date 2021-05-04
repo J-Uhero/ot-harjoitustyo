@@ -1,8 +1,8 @@
 import pygame as pg
-from difficulty import Difficulty
+from entities.difficulty import Difficulty
 from services.view_grid import ViewGrid
-from square import Square
-from clock import Clock
+from entities.square import Square
+from entities.clock import Clock
 
 class GameView:
     def __init__(self, difficulty, square_size):

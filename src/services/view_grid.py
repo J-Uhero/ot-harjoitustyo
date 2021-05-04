@@ -1,4 +1,4 @@
-from difficulty import Difficulty
+from entities.difficulty import Difficulty
 from services.locations_grid import Grid
 
 class ViewGrid:

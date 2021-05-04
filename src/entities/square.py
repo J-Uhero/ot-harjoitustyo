@@ -14,7 +14,7 @@ class Square(pg.sprite.Sprite):
         super().__init__()
         self.y = y
         self.x = x
-        self.image = pg.image.load(os.path.join(dirname, "assets", pic_names[square_type]))
+        self.image = pg.image.load(os.path.join(dirname, "..", "assets", pic_names[square_type]))
         self.rect = self.image.get_rect()
         self.rect.y = y * square_size
         self.rect.x = x * square_size
