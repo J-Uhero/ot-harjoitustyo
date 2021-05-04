@@ -17,5 +17,6 @@ Suorituskomento avaa pelinäkymän:
 
 ![pelinakyma](./kuvat/miinaharava-nakyma-viikko6-easy.png)
 
-Pelinäkymän vasemmassa yläkulmassa on valikko, josta voit vaihtaa pelin vaikeusastetta. Vaikeusaste vaikuttaa peliruudukon kokoon ja miinojen määrään.
+Pelinäkymän vasempaa yläkulman kohtaa, jossa lukee "easy", painamalla avautuu on valikko, josta voi vaihtaa pelin vaikeusastetta. Vaikeusaste vaikuttaa peliruudukon kokoon ja miinojen määrään.
+
 Pelissä pelaajan tulee avata hiirellä peliruudukon ruutuja. Ensimmäinen painallus hiiren vasemmalla näppäimellä käynnistää pelin. Pelin numeroruudut kertovat, kuinka montaa eri miinaa ruudun sivut ja kulmat koskettavat. Näiden numerovihjeiden avulla pelaajan tulee päätellä, missä pelin ruuduissa miinat sijaitsevat. Pelaajan tulee asettaa lippuja ruutuihin, joissa pelaaja epäilee miinojen olevan. Lippuja on käytettävissä yhtä monta, kuin miinoja on. Asettaminen tapahtuu hiiren oikeallla näppäimellä tai hiiren vasemmalla näppäimellä samalla, kun ALT-näppäin on painettuna pohjaan. Pelaajaaja häviää pelin avattuaan ruudun, jossa sijaitsee miina ja läpäisee pelin kartoitettuaan lipuilla kaikki miinat ja avattuaan muut ruudut. Pelin voi käynnistää uudestaan "new game"-näppäimestä.
