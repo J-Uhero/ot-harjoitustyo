@@ -1,5 +1,8 @@
 # Arkkitehtuuri
 
+### Hakemistorakenne
+![hakemistorakenne](./kuvat/ot_harjoitustyo_hakemistorakenne.png)
+
 ### Luokkakaavio: 
 ![luokkakaavio](./kuvat/luokkakaavio_ot_harjoitustyo.png)
  
