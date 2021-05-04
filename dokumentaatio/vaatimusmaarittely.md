@@ -24,7 +24,7 @@ kaikki miinat on kartoitettu ja merkattu ja muut ruudut avattu.
 * Pelissä on kello, joka käynnistyy, kun painetaan ensimmäistä ruutua. *tehty*
 * Pelissä on voi aloittaa uuden pelin käynnistämättä sitä uudestaan (naamaa painamalla). *tehty (nappi on, naama vielä puuttuu)*
 * Kun pelaaja osuu miinaa, peli näyttää, jos jokin lippu oli paikassa, jossa ei ollut miinaa. *tehty **uusi***
-* Pelaaja voi vaihtaa pelatessa vaikeustasoja, jotka vaikuttavat ruudukon kokoon ja miinojen määrään. (lisätty kehitysideoista) *tehty* *uusi***
+* Pelaaja voi vaihtaa pelatessa vaikeustasoja, jotka vaikuttavat ruudukon kokoon ja miinojen määrään. (lisätty kehitysideoista) *tehty **uusi***
 
 ## Toimintaympäristö ja rajoitteet
 * Peli toteutetaan Pythonilla (vähintään versio 3.6).
