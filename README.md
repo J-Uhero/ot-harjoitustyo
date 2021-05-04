@@ -30,3 +30,4 @@ poetry run invoke lint
 
 ### Versiot
 [first release](https://github.com/J-Uhero/ot-harjoitustyo/releases/tag/viikko5)
+[2th release](https://github.com/J-Uhero/ot-harjoitustyo/releases/tag/viikko6)
