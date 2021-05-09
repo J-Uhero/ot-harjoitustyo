@@ -1,11 +1,13 @@
 from entities.difficulty import Difficulty
 from services.locations_grid import Grid
+from status import Status
+from game_status import GameStatus
 
 class ViewGrid:
     """Luokka, joka vastaa tiedosta, mitä eri ruutuja peliruudukossa sijaitsee missäkin
     kohdissa, ja toiminnallisuuksista, jotka vaikuttavat pelinäkymään.
     """
-    def __init__(self, difficulty):
+    def __init__(self, difficulty, game_status):
         """Luokan konstruktori
 
         Args:
@@ -20,7 +22,7 @@ class ViewGrid:
         self._first_push = True
         self.grid = None
         self.unopened = self.height * self.width
-        self._game_status = "ready"
+        self.game_status = game_status
 
     def create_view(self):
         """Luo taulukkon, jossa sijaitsee tiedot pelinäkymän ruutujen tilasta
@@ -147,22 +149,27 @@ class ViewGrid:
         painettu ja peli on käynnistynyt.
         """
         self._first_push = False
-        self._game_status = "started"
+        #self.game_status = "started"
+        self.game_status.set_status(Status.PLAYING)
+        print(self.game_status)
+        print(self.game_status.get_status())
 
     def game_over(self):
         """Muuttaa pelitilan häviöksi.
         """
-        self._game_status = "game_over"
+        self.game_status.set_status(Status.GAMEOVER)
+        #self.game_status = "game_over"
         self.open_remaining_mines()
         self.check_false_flags()
 
     def victory(self):
         """Muuttaa pelitilan voitoksi.
         """
-        self._game_status = "victory"
+        self.game_status.set_status(Status.VICTORY)
+        #self.game_status = "victory"
 
     def give_game_status(self):
-        return self._game_status
+        return self.game_status
 
     def give_unopened(self):
         return self.unopened

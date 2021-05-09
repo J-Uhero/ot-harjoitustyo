@@ -2,6 +2,9 @@ import pygame as pg
 import pygame_gui
 from services.game_view import GameView
 from ui.game_display import GameDisplay
+from status import Status
+from game_status import GameStatus
+from services.scores_service import ScoresService
 
 class GameLoop:
     """ Pelinäppäinten painalluksista ja näytön päivittämisestä vastaavan pelisilmukkaolio.
@@ -18,6 +21,8 @@ class GameLoop:
         self._square_size = square_size
         self._gameview = None
         self._display = None
+        self._game_status = GameStatus()
+        self._scores_service = ScoresService()
         self._stop = None
         self._clock = None
         self._build_game()
@@ -25,17 +30,20 @@ class GameLoop:
     def _build_game(self,):
         """Luo pelinäytön ja -näkymän 
         """
-        self._gameview = GameView(self._difficulty, self._square_size)
-        self._display = GameDisplay(self._difficulty, self._square_size, self._gameview)
+        self._game_status.set_status(Status.READY)
+        self._gameview = GameView(self._difficulty, self._square_size, self._game_status)
+        self._display = GameDisplay(self._difficulty,
+                                    self._square_size,
+                                    self._gameview,
+                                    self._game_status,
+                                    self._scores_service)
         self._stop = False
         self._clock = pg.time.Clock()
 
     def start(self):
         """Funktio, joka käynnistää siinä olevan pelisilmukan, jossa koko peli pyörii.
         """
-
         while True:
-
             self._events()
             self._render()
 
@@ -67,6 +75,17 @@ class GameLoop:
                     if event.ui_element == self._display.give_new_game_button():
                         self._gameview.new_game()
                         self._stop = False
+                    if event.ui_element == self._display.give_scores_button():
+                        self._display.built_score_table()
+                    if self._game_status.get_status() == Status.NEWSCORE:
+                        if event.ui_element == self._display.get_enter_score_button():
+                            text = self._display.get_scores_text_entry().get_text()
+                            time = self._gameview.give_exact_time()
+                            level = self._difficulty.degree()
+                            print(text)
+                            self._scores_service.new_score(text, time, level)
+                            self._display.get_new_score_window().kill()
+
                 if event.user_type == pygame_gui.UI_DROP_DOWN_MENU_CHANGED:
                     if event.text == "easy":
                         self._difficulty.easy()
@@ -75,19 +94,21 @@ class GameLoop:
                     if event.text == "hard":
                         self._difficulty.hard()
                     self._build_game()
+
                 if event.user_type == pygame_gui.UI_TEXT_ENTRY_FINISHED:
-                    pass
+                    if self._game_status.get_status() == Status.NEWSCORE:
+                        text = event.text
+                        time = self._gameview.give_exact_time()
+                        level = self._difficulty.degree()
+                        print(text)
+                        self._scores_service.new_score(text, time, level)
+                        self._display.get_new_score_window().kill()
 
             self._display.manager_process_event(event)
-
 
     def _render(self):
         """Päivittää pelinäytön ulkoasun.
         """
-        if self._stop:
-            pass
-        else:
-            self._gameview._sprites.draw(self._display.give_game_surface())
+        self._gameview._sprites.draw(self._display.give_game_surface())
         self._display.update_display()
         pg.display.update()
-

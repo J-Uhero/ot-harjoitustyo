@@ -3,13 +3,16 @@ from entities.difficulty import Difficulty
 from services.view_grid import ViewGrid
 from entities.square import Square
 from entities.clock import Clock
+from game_status import GameStatus
+from status import Status
 
 class GameView:
-    def __init__(self, difficulty, square_size):
+    def __init__(self, difficulty, square_size, status):
         self._difficulty = difficulty
         self._square_size = square_size
         self._sprites = pg.sprite.Group()
         self._game_clock = Clock()
+        self.game_status = status
         self.new_game()
         self._initialized_sprites()
         self._continue_game = True
@@ -17,7 +20,8 @@ class GameView:
     def new_game(self):
         self._game_clock.reset()
         self.set_display_size()
-        self._grid = ViewGrid(self._difficulty)
+        self.game_status.set_status(Status.READY)
+        self._grid = ViewGrid(self._difficulty, self.game_status)
         self._initialized_sprites()
         self._continue_game = True
 
@@ -32,7 +36,7 @@ class GameView:
                 self._sprites.add(Square(y, x, square_type, self._square_size))
 
     def push_button(self, pos_x, pos_y, button):
-        if self._grid.give_game_status() ==  "ready":
+        if self.game_status.get_status() == Status.READY:
             self._game_clock.start()
         if self._continue_game:
             y = ((pos_x) // self._square_size)
@@ -46,16 +50,15 @@ class GameView:
         self._initialized_sprites()
 
     def check_status(self):
-        status = self._grid.give_game_status()
-        if status == "game_over":
+        if self.game_status.get_status() == Status.GAMEOVER:
             self._game_clock.stop()
             self._continue_game = False
-            return 1
-        if status == "victory":
+            #return 1
+        if self.game_status.get_status() == Status.VICTORY:
             self._continue_game = False
             self._game_clock.stop()
-            return 2
-        return 0
+            #return 2
+        #return 0
 
     def pause(self):
         if self._continue_game:
