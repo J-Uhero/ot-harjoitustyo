@@ -10,4 +10,5 @@ Koska ohjelmani sovelluslogiikan kaksi luokkaa, ViewGrid ja LocationsGrid, toimi
 Toinen testiluokkani TestScoresService testasi ScoresService-luokkaa, joka ohjelmassani käsittelee SQL-tietokannasta saatavia tietoja ja sitä kautta tietokantayhteyden toimivuutta. Näin myös tämä luokka tuli testanneeksi repositories-kansion ScoreRepository-luokkaa, jonka vastuualueena on varsinaiset tietokantakomennot.
 
 Testikattavuusraporttini näyttää seuraavalta:
+
 ![testikattavuusraportti](./kuvat/testikattavuus-html.png)
