@@ -11,7 +11,7 @@ kaikki miinat on kartoitettu ja merkattu ja muut ruudut avattu.
   ja kirjata omia tuloksia ylös.
   
 ## Näkymä
-* Pelissä on kokoaijan näkyvillä pelinäkymä, jonka koko riippuu vaikeustasosta. Alussa Peli alkaa easy-vaikeustasolla, jonka peliruudukko on 9x9-kokoinen. Pelin huipputulokset aukeavat scores-painikkeesta painaessa pelinäkymän päälle omaan ilmoitusikkunaan, jonka voi klikata ruksista pois. Lisäksi pelin läpäisyn yhteydessä aukeaa oma ikkuna, jossa lukee pelin läpäisyyn kulunut aika, vaikeustaso ja mahdollinen sijoitus. Tämän saa myös ruksilla suljettuna tai sijoittuessa 10 parhaan joukkoon, myös nimimerkin antamisen yhteydestä painamalla tekstisyötössä koneen enter-painiketta tai sen vieressä olevaa käyttöliittymän enter-painiketta.
+* Pelissä on kokoaijan näkyvillä pelinäkymä, jonka koko riippuu vaikeustasosta. Alussa Peli alkaa easy-vaikeustasolla, jonka peliruudukko on 9x9-kokoinen. Näkymässä on lisäksi ylä- ja alapaneelit, joissa näkyy tietoja pelin kulusta ja sijaitsee napit uuden pelin käynnistämiseen, huipputulosten katsomiseen ja pelin vaikeustason valitsemiseen. Pelin huipputulokset aukeavat scores-painikkeesta painaessa pelinäkymän päälle omaan ilmoitusikkunaan, jonka voi klikata ruksista pois. Lisäksi pelin läpäisyn yhteydessä aukeaa oma ikkuna, jossa lukee pelin läpäisyyn kulunut aika, vaikeustaso ja mahdollinen sijoitus. Tämän saa myös ruksilla suljettuna tai sijoittuessa 10 parhaan joukkoon, myös nimimerkin antamisen yhteydestä painamalla tekstisyötössä koneen enter-painiketta tai sen vieressä olevaa käyttöliittymän enter-painiketta.
 
 ## Toiminnallisuudet
 * Peli arpoo miinoja ruudukon eri kohtiin.
