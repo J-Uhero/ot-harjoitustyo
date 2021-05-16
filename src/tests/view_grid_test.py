@@ -1,11 +1,14 @@
 import unittest
 from services.view_grid import ViewGrid
 from entities.difficulty import Difficulty
+from status import Status
+from game_status import GameStatus
 
 class TestView(unittest.TestCase):
     def setUp(self):
         self.difficulty = Difficulty()
-        self.random_view = ViewGrid(self.difficulty)
+        self.game_status = GameStatus()
+        self.random_view = ViewGrid(self.difficulty, self.game_status)
 
     def test_the_view_is_empty_at_the_beginning(self):
         empty = True
@@ -33,7 +36,7 @@ class TestView(unittest.TestCase):
         status = self.random_view.give_game_status()
         flags = self.random_view.give_flags()
         unopened = self.random_view.give_unopened()
-        self.assertEqual((status, flags, unopened), ("victory",0,0))
+        self.assertEqual((status.get_status(), flags, unopened), (Status.VICTORY,0,0))
 
     def test_flag_cant_be_opened(self):
         self.random_view.push_right_button(0, 0)
@@ -67,6 +70,3 @@ class TestView(unittest.TestCase):
         print(mines)
         print(status_list)
         self.assertEqual(status_list, ["r","x","x","x","x","x","x","x","x","x"])
-        
-
-    

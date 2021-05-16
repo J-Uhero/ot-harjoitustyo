@@ -33,7 +33,7 @@ class NewScoreWindow:
             self.built_text_entry()
             self.built_enter_button()
         else:
-            text += f"<br> <br>score below top 10 :("
+            text += f"<br> <br>score below top 10"
 
         textbox = pygame_gui.elements.UITextBox(html_text=text,
                                                 relative_rect=rect,

@@ -44,28 +44,28 @@ class GuiElements:
                                                              manager=self._manager)
 
     def create_flag_label(self):
-        rect = pg.Rect(self._width - 180, 10, 80, 30)
+        rect = pg.Rect(self._width - 140, 10, 30, 30)
         flags = self._game_view.give_flags()
         self._flag_label = pygame_gui.elements.UILabel(relative_rect=rect,
-                                                       text=f"flags: {flags}",
+                                                       text=f"{flags}",
                                                        manager=self._manager)
 
     def update_flag_label(self):
-        self._flag_label.set_text(text=f"flags: {self._game_view.give_flags()}")
+        self._flag_label.set_text(text=f"{self._game_view.give_flags()}")
 
     def create_clock_label(self):
-        rect = pg.Rect(self._width-90, 10, 80, 30)
+        rect = pg.Rect(self._width-50, 10, 40, 30)
         self._clock_label = pygame_gui.elements.UILabel(relative_rect=rect,
-                                                        text=f"time: {self._game_view.give_time()}",
+                                                        text=f"{self._game_view.give_time()}",
                                                         manager=self._manager)
 
     def update_clock_label(self, time):
-        self._clock_label.set_text(f"time: {self._game_view.give_time()}")
+        self._clock_label.set_text(f"{self._game_view.give_time()}")
 
     def create_scores_button(self):
-        rect = pg.Rect(self._width-70, self._surface_height + self._game_surface_height+10, 60, 30)
+        rect = pg.Rect(self._width-80, self._surface_height + self._game_surface_height+10, 70, 30)
         self._scores_button = pygame_gui.elements.UIButton(relative_rect=rect,
-                                                            text="stats", manager=self._manager)
+                                                            text="scores", manager=self._manager)
 
     def create_winning_table(self):
         rect = pg.Rect(10, self._surface_height+10, 250, 250)

@@ -149,16 +149,12 @@ class ViewGrid:
         painettu ja peli on käynnistynyt.
         """
         self._first_push = False
-        #self.game_status = "started"
         self.game_status.set_status(Status.PLAYING)
-        print(self.game_status)
-        print(self.game_status.get_status())
 
     def game_over(self):
         """Muuttaa pelitilan häviöksi.
         """
         self.game_status.set_status(Status.GAMEOVER)
-        #self.game_status = "game_over"
         self.open_remaining_mines()
         self.check_false_flags()
 
@@ -166,13 +162,12 @@ class ViewGrid:
         """Muuttaa pelitilan voitoksi.
         """
         self.game_status.set_status(Status.VICTORY)
-        #self.game_status = "victory"
 
     def give_game_status(self):
         return self.game_status
 
     def give_unopened(self):
         return self.unopened
-    
+
     def give_flags(self):
         return self.flags

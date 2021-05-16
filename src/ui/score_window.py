@@ -11,13 +11,13 @@ class ScoreWindow:
         self.build_high_score_window()
 
     def build_high_score_window(self):
-        rect2 = pg.Rect(0, 0, 300, 350)
-        self.window = pygame_gui.elements.UIWindow(rect=rect2,
+        rect1 = pg.Rect(0, 0, 270, 370)
+        self.window = pygame_gui.elements.UIWindow(rect=rect1,
                                               manager=self._manager,
                                               window_display_title="High Scores")
-        rect3 = pg.Rect(0, 0, 230, 200)
+        rect2 = pg.Rect(0, 0, 238, 311)
         stats = pygame_gui.elements.UITextBox(html_text=self.high_score_text(),
-                                              relative_rect=rect3,
+                                              relative_rect=rect2,
                                               manager=self._manager,
                                               container=self.window)
 
@@ -25,7 +25,7 @@ class ScoreWindow:
         texts = ["name:", "time:"]
         easy, medium, hard = self.service.get_high_scores()
 
-        line = f"   {texts[0]:10}{texts[1]}<br>"
+        line = f"    {texts[0]:10}{texts[1]}<br>"
         text = "Easy: <br>" + line
         text += self.print_score_list(easy)
 
@@ -50,7 +50,3 @@ class ScoreWindow:
             text += f"{rank}.{vali}{score.name:10}{score.time:.2f} <br>"
             rank += 1
         return text
-
-
-
-

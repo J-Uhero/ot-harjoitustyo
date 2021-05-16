@@ -28,6 +28,7 @@ class GameDisplay:
                        self.status_surface.height()
         self._width = difficulty.width() * square_size
         self.game_status = game_status
+        self.updated_status = self.game_status.get_status()
         self.game_view = game_view
         self._square_size = square_size
         self._difficulty = difficulty
@@ -36,7 +37,6 @@ class GameDisplay:
         self.built_display()
         self.built_elements(square_size)
         self.update_display()
-
 
     def built_display(self):
         """Luo Pygamen pelinäytön ja asettaa sille nimen
@@ -55,6 +55,9 @@ class GameDisplay:
         self.check_victory()
         self.update_elements()
         self.manager_draw_ui()
+        if self.game_status.get_status() != self.updated_status:
+            self.updated_status = self.game_status.get_status()
+            self.option_surface.draw(self.game_status.get_status())
 
     def check_victory(self):
         if self.game_status.get_status() == Status.VICTORY:
