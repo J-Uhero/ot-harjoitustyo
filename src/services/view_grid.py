@@ -11,7 +11,7 @@ class ViewGrid:
         """Luokan konstruktori
 
         Args:
-            difficulty (Difficulty): Tieto pelin vaikeustasosta, joka vaikuttaa 
+            difficulty (Difficulty): Tieto pelin vaikeustasosta, joka vaikuttaa
             pelinäkymätietoja sisältävän taulukon kokoon.
         """
         self.height = difficulty.height()
@@ -80,7 +80,7 @@ class ViewGrid:
     def push_left_button(self, y, x):
         """Muokkaa pelinäkymätietoja, kun tiettyyn peliruudukon koordinaattia on
         painettu hiiren vasemmalla painikkeella. Vasemmalla painikkeella avataan peliruutuja.
-        Jos painallus on pelin ensimmäinen, peli luo Grid-luokan kuvaamaan pelin miinojen ja 
+        Jos painallus on pelin ensimmäinen, peli luo Grid-luokan kuvaamaan pelin miinojen ja
         numeroiden sijainteja ja näkymäruudukkoa päivitetään Grid-luokan mukaan.
         "<space>"-merkki kuvaa avaamatonta ruutua, "0" tyhjää ruutua numerot 1-8 merkkijonoina
         kuvaavat numeroruutuja, "x" on miina, "r" punainen miina, johon pelaaja on osunut,
@@ -98,7 +98,7 @@ class ViewGrid:
             self.grid = Grid(self.height, self.width, self.mines, (y,x))
             self.first_push()
         if self.view[y][x] != " ":
-            return False 
+            return False
         value = self.grid.give_coordinate_value(y,x)
         if value == 0:
             self.view[y][x] = "0"

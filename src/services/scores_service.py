@@ -1,5 +1,6 @@
-from repositories.score_repository import score_repository
 from datetime import datetime
+from repositories.score_repository import score_repository
+
 
 class ScoresService:
     """Vastaa pelin ennätystulostietojen välittämisestä käyttöliittymälle ja
@@ -41,7 +42,7 @@ class ScoresService:
 
     def is_score_a_high_score(self, time, level):
         """Tarkastaa aika- ja vaikeustasotietojen mukaan, onko aika parempi
-        kuin tulostietojen kymmenenneksi paras aika, eli mahtuuko uusi aika 
+        kuin tulostietojen kymmenenneksi paras aika, eli mahtuuko uusi aika
         kymmenen parhaan tuloksen joukkoon.
 
         Args:

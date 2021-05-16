@@ -1,6 +1,10 @@
 .vscode
 src/tests/__pycache__
 src/pygame_gui_testi.py
+src/pygame_index.py
+src/ui/events.py
+src/ui/labels.py
+src/ui/miinaharava_teksti_ui.py
 .pytest_cache
 htmlcov
 .DS_Store

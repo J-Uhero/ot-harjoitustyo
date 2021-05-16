@@ -41,4 +41,3 @@ class Difficulty:
         self._width = 30
         self._mines = 99
         self._degree = "hard"
-

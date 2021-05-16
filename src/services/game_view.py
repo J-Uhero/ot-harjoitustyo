@@ -1,14 +1,12 @@
 import pygame as pg
-from entities.difficulty import Difficulty
 from services.view_grid import ViewGrid
 from entities.square import Square
 from entities.clock import Clock
-from game_status import GameStatus
 from status import Status
 
 class GameView:
     """Luokka vastaa pelinäkymän spritejen ylläpidosta, pelin jatkuvuudesta
-    ja välittää käyttöliittymän painallukset peliruudukkoa 
+    ja välittää käyttöliittymän painallukset peliruudukkoa
     ylläpitävälle ViewGrid-luokalle.
     """
     def __init__(self, difficulty, square_size, status):
@@ -60,17 +58,17 @@ class GameView:
         if self.game_status.get_status() == Status.READY:
             self._game_clock.start()
         if self._continue_game:
-            y = ((pos_x) // self._square_size)
-            x = ((pos_y) // self._square_size)
+            coord_y = ((pos_x) // self._square_size)
+            coord_x = ((pos_y) // self._square_size)
             if button == "left":
-                self._grid.push_left_button(x, y)
+                self._grid.push_left_button(coord_x, coord_y)
             if button == "right":
-                self._grid.push_right_button(x, y)
+                self._grid.push_right_button(coord_x, coord_y)
             self.check_status()
         self._initialized_sprites()
 
     def check_status(self):
-        """Tarkistaa pelitilan ja pysäyttää pelin, jos tarpeen. 
+        """Tarkistaa pelitilan ja pysäyttää pelin, jos tarpeen.
         """
         if self.game_status.get_status() == Status.GAMEOVER:
             self._game_clock.stop()

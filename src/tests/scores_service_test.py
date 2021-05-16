@@ -1,8 +1,6 @@
 import unittest
 import build
 from services.scores_service import ScoresService
-from repositories.score_repository import score_repository
-from entities.score import Score
 
 class TestScoresService(unittest.TestCase):
     def setUp(self):
@@ -29,7 +27,7 @@ class TestScoresService(unittest.TestCase):
         time2 = 25.0000
         result2 = self.service.is_score_a_high_score(time2, level)
         self.assertEqual((result1, result2), (False, True))
-    
+
     def test_that_the_ranking_of_a_score_is_right(self):
         level = "easy"
         time1 = 19.0000
@@ -51,15 +49,3 @@ class TestScoresService(unittest.TestCase):
         self.service.new_score("", 25.0000, "hard")
         easy, medium, hard = self.service.get_high_scores()
         self.assertEqual((len(medium[0].name), hard[0].name), (10, "untitled"))
-    
-
-
-
-
-
-
-
-
-    
-
-

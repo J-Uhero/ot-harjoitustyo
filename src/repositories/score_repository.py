@@ -5,8 +5,8 @@ def give_score_object(row):
     return Score(row["name"], row["time"], row["level"], row["date"])
 
 class ScoreRepository:
-    def __init__(self, connection):
-        self._connection = connection
+    def __init__(self, db_connection):
+        self._connection = db_connection
 
     def create_score(self, name, time, level, date):
         cursor = self._connection.cursor()

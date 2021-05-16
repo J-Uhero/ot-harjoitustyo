@@ -107,27 +107,28 @@ class TestViewGrid(unittest.TestCase):
         height3 = self.random_view.height
         width3 = self.random_view.width
         mines3 = len(self.random_view.grid.give_mines_locations())
-
-        self.assertEqual((width1, height1, mines1, width2, height2, mines2, width3, height3, mines3),
-                         (9,9,10,16,16,40,30,16,99))
+        results = (width1, height1, mines1, width2,
+                   height2, mines2, width3, height3, mines3)
+        self.assertEqual(results, (9,9,10,16,16,40,30,16,99))
 
     def test_if_the_flag_in_a_wrong_places_gives_right_answer(self):
         self.random_view.push_left_button(0, 0)
         mine_locations = self.random_view.grid.give_mines_locations()
-        y = None
-        x = None
+        coord_y = None
+        coord_x = None
         not_found = True
         while not_found:
             for i in range(self.random_view.height):
                 for j in range(self.random_view.width):
-                    if not_found and (i,j) not in mine_locations and self.random_view.coordinates(i, j) == " ":
-                        self.random_view.push_right_button(i, j)
-                        y = i
-                        x = j
-                        not_found = False
+                    if not_found and (i,j) not in mine_locations:
+                        if self.random_view.coordinates(i, j) == " ":
+                            self.random_view.push_right_button(i, j)
+                            coord_y = i
+                            coord_x = j
+                            not_found = False
             if not_found:
                 self.game_status = GameStatus()
                 self.random_view = ViewGrid(self.difficulty, self.game_status)
         self.random_view.push_left_button(mine_locations[0][0], mine_locations[0][1])
-        result = self.random_view.coordinates(y, x)
+        result = self.random_view.coordinates(coord_y, coord_x)
         self.assertEqual(result, "w")

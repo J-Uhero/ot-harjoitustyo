@@ -1,3 +1,5 @@
+from random import randint
+
 class Grid:
     """Luokka joka arpoo miinojen sijainnit ja säilöö miinojen ja lukujen
     sijaintitietoja
@@ -42,7 +44,6 @@ class Grid:
         Args:
             first_yx (tuple): aloituspainalluksen y- ja x-koordinaatit
         """
-        from random import randint
         empty_space_y = [first_yx[0]-1, first_yx[0], first_yx[0]+1]
         empty_space_x = [first_yx[1]-1, first_yx[1], first_yx[1]+1]
         mines_left = self.mines
@@ -78,7 +79,7 @@ class Grid:
             numerot siitä ylöspäin peliruudun numeroita
         """
         return self.grid[coord_y][coord_x]
-    
+
     def give_mines_locations(self):
         """Palauttaa tiedon peliruudukon miinojen sijainnista.
 

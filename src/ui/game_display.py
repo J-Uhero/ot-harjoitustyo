@@ -131,9 +131,6 @@ class GameDisplay:
     def give_surface_height(self):
         return self.status_surface.height()
 
-    def give_drop_menu(self):
-        return
-
     def get_enter_score_button(self):
         return self.new_score_window.get_enter_button()
 

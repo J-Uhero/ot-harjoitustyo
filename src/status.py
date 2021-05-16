@@ -7,8 +7,3 @@ class Status(enum.Enum):
     VICTORY=4
     NEWSCORE=5
     HIGHSCORES=6
-
-
-
-
-

@@ -22,4 +22,3 @@ def initialize_database():
     connection = database_connection()
     drop_tables(connection)
     create_tables(connection)
-
