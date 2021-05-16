@@ -15,5 +15,9 @@ Päivä | Aika (h) | Mitä tein
 27.4. | 10 | Aloin muokkaamaan varsinaista ohjelmaani ja lisättyä siihen new game -napin, josta tosin puuttuu vielä hymynaama vaihtuvia kuvia sisältävän nappulan luomisen osottauduttua yllättävän haastavaksi. Tein ohjelmaani toimivan kellonnäytön, joka näyttää peliajan sekuntteina ja toisen näytön kertomaan jäljellä olevien lippujen määrän. Jouduin muokkailemaan myös aiempia luokkiani saadakseni homman toimimaan. Päivitin testejä.
 3.5. | 2 | Tein uuden spiriten kuvaamaan pelin päätyttyä väärässä kohdassa sijaitsevaa lippua ja lisäsin pelin sovelluslogiikkaan toiminnallisuuden, jolla nämä ruudut lisätään pelinäkymään.
 4.5. | 11 | Pelin päivittämistä. Peliin luotu valikko, jolla voi vaihtaa pelin vaikeustasoja. Kokeilin myös eri Pygame Guin ominaisuuksia, joilla voisin luoda pelin läpäisynäytön/tulosnäytön. Docstring-merkintöjä lisäilty eri kooditiedostoihin. Dokumentaation päivittelyä. Tekstikäyttöliittymä poistettu pelin toiminnallisuuksista. Testien päivittämistä ja hakemistorakenteen muokkaamista ja hakemistorakenteen päivittäminen arkkitehtuurikuvaukseen.
+7.5. | 8 | Tein pelin tietokantayhteyttä ja siihen liittyviä luokkia.
+8.5. | 8 | Tein käyttöliittymätoiminnallisuuksia, joilla tietokannasta saa näkyviin pelituloksia ja pelin voitettuaan voi tallentaa omat tulokset.
+15.5 | 2 | Päivitin spritejä ja pelin ulkoasua.
+16.5 | 11 | Tein viimeiset testit, ulkoasumuokkaukset, päivitin arkkitehtuuria, loin testitiedoston, siistin koodia tein palautustoimenpiteitä.
 
-yht. 73,5 h
+yht. 102,5 h
