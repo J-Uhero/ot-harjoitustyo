@@ -12,3 +12,7 @@ Toinen testiluokkani TestScoresService testasi ScoresService-luokkaa, joka ohjel
 Testikattavuusraporttini näyttää seuraavalta:
 
 ![testikattavuusraportti](./kuvat/testikattavuus-html.png)
+
+## Käyttöliittymä
+
+Olen pelannut ja kokeillut ohjelmat toiminnallisuutta Pääasiassa MacOS-yhpäristössä ja yrittänyt käydä tarkasti läpi erilaisia pelitilanteita ja -tapahtumia. Määrittelydokumentin kohdat on käyty läpi.
