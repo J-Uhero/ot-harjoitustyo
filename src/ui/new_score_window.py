@@ -26,8 +26,9 @@ class NewScoreWindow:
     def built_text_box(self):
         rect = pg.Rect(10, 10, 220, 170)
         text = f"new score! <br>time: {self.time:.2f} seconds <br>level: {self.difficulty}"
-        ranking = self.score_service.check_ranking_of_a_score(self.time, self.difficulty)+1
-        if ranking <= 10:
+        ranking = self.score_service.check_ranking_of_a_score(self.time, self.difficulty)
+        if self.score_service.is_score_a_high_score(self.time, self.difficulty):
+            ranking = self.score_service.check_ranking_of_a_score(self.time, self.difficulty)
             text += f"<br> <br>ranking: {rankings[ranking]} place \
                     <br> <br>insert your name below<br>and press enter"
             self.built_text_entry()

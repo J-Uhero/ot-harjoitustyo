@@ -17,17 +17,6 @@ class ScoreRepository:
 
         self._connection.commit()
 
-    def find_score_by_name(self, name):
-        cursor = self._connection.cursor()
-        scores = cursor.execute("""
-            SELECT * 
-                FROM Scores WHERE nimi=? 
-                GROUP BY id 
-                ORDER BY date;
-        """, [name]).fetchall()
-
-        return list(map(give_score_object, scores))
-
     def find_high_scores_by_level(self, level, quantity):
         cursor = self._connection
         scores = cursor.execute("""

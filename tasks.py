@@ -23,3 +23,7 @@ def lint(ctx):
 @task
 def build(ctx):
     ctx.run("python3 src/build.py")
+
+@task
+def coverage_report_html(ctx):
+    ctx.run("coverage html")

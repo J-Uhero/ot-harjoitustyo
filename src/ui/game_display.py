@@ -20,6 +20,8 @@ class GameDisplay:
             difficulty (Difficulty): pelin vaikeustasoa kuvaava olio
             square_size (int): yhden peliruudun sivun pituus
             game_view (GameView): pelinäkymää kuvaava luokka
+            game_status (GameStatus): luokka, joka sisältää tiedon pelitilasta
+            scores_service (ScoresService): luokka, joka kommunikoi tietokannan kanssa
         """
         self.game_surface = GameSurface(difficulty, square_size)
         self.option_surface = OptionSurface(difficulty, square_size)
@@ -42,7 +44,7 @@ class GameDisplay:
         """Luo Pygamen pelinäytön ja asettaa sille nimen
         """
         self._display = pg.display.set_mode((self._width, self._height))
-        pg.display.set_caption("Miinaharava")
+        pg.display.set_caption("Minesweeper")
 
     def update_display(self):
         """Päivittää näytön: asettaa sille sen eri alustat, päivittää peliruudun
@@ -60,6 +62,8 @@ class GameDisplay:
             self.option_surface.draw(self.game_status.get_status())
 
     def check_victory(self):
+        """Tarkistaa, onko pelaaja läpäissyt pelin ja käynnistää voittoikkunan, jos on.
+        """
         if self.game_status.get_status() == Status.VICTORY:
             self.game_status.set_status(Status.NEWSCORE)
             self.new_score_window = NewScoreWindow(self.manager,
@@ -81,7 +85,6 @@ class GameDisplay:
     def built_score_table(self):
         height = self._difficulty.height() * self._square_size
         ScoreWindow(self.manager, self._width, height, self._square_size)
-        #self.new_score_window = NewScoreWindow(self.manager, self.game_view, self.score_service, self._difficulty)
 
     def update_elements(self):
         """Päivittää pelin käyttöliittymäelementit

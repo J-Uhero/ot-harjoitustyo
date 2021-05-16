@@ -13,8 +13,8 @@ class GameLoop:
         """Konstruktori, joka luo GameLoop-olion.
 
         Args:
-            difficulty (Difficulty): Vaikeustaso-olio, joka kertoo peliruutujen määrän ja sen myötä pelinäytön
-                                     koon yhdessä peliruudukon ruutujen koon kanssa.           
+            difficulty (Difficulty): Vaikeustaso-olio, joka kertoo peliruutujen määrän ja
+            sen myötä pelinäytön koon yhdessä peliruudukon ruutujen koon kanssa.           
             square_size (int): Kokonaisluku, joka kertoo yhden peliruudun koon.
         """
         self._difficulty = difficulty
@@ -46,7 +46,6 @@ class GameLoop:
         while True:
             self._events()
             self._render()
-            print(pg.mouse.get_pos())
 
             time_delta = self._clock.tick(60)/1000.0
             self._display.manager_update_time_delta(time_delta)

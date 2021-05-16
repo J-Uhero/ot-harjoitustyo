@@ -39,7 +39,7 @@ class ScoresService:
             name = "untitled"
         self.repository.create_score(name, time, level, date)
 
-    def is_score_a_high_score(time, level):
+    def is_score_a_high_score(self, time, level):
         """Tarkastaa aika- ja vaikeustasotietojen mukaan, onko aika parempi
         kuin tulostietojen kymmenenneksi paras aika, eli mahtuuko uusi aika 
         kymmenen parhaan tuloksen joukkoon.
@@ -67,4 +67,4 @@ class ScoresService:
             [int]: sijoitusta kuvaava kokonaisluku
         """
         ranking = self.repository.check_ranking_of_a_score(time, level)
-        return ranking[0]
+        return ranking[0]+1
