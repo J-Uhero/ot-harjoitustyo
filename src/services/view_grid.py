@@ -1,7 +1,5 @@
-from entities.difficulty import Difficulty
 from services.locations_grid import Grid
 from status import Status
-from game_status import GameStatus
 
 class ViewGrid:
     """Luokka, joka vastaa tiedosta, mitä eri ruutuja peliruudukossa sijaitsee missäkin

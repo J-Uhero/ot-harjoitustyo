@@ -38,14 +38,15 @@ class TestScoresService(unittest.TestCase):
 
     def test_that_the_list_has_right_length(self):
         self.service.new_score("TestName", 25.0000, "easy")
-        easy1, medium1, hard1 = self.service.get_high_scores()
+        diff1 = self.service.get_high_scores()
         self.service.new_score("TestName", 25.0000, "easy")
         self.service.new_score("TestName2", 25.0000, "hard")
-        easy2, medium2, hard2 = self.service.get_high_scores()
-        self.assertEqual((len(easy1), len(hard1), len(easy2), len(hard2)), (10, 0, 10, 1))
+        diff2 = self.service.get_high_scores()
+        self.assertEqual((len(diff1[0]), len(diff1[2]), len(diff2[0]),len(diff2[2])),
+                         (10, 0, 10, 1))
 
     def test_if_the_names_are_right(self):
         self.service.new_score("TooooooLongName", 25.0000, "medium")
         self.service.new_score("", 25.0000, "hard")
-        easy, medium, hard = self.service.get_high_scores()
-        self.assertEqual((len(medium[0].name), hard[0].name), (10, "untitled"))
+        diff = self.service.get_high_scores()
+        self.assertEqual((len(diff[1][0].name), diff[2][0].name), (10, "untitled"))
