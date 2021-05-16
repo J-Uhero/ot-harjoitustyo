@@ -9,7 +9,7 @@ Tällä hetkellä olen ottanut hakemistorakenteeseen mallia sekä Sokoban että 
 ### Luokkakaavio: 
 Alustava versio:
 
-![luokkakaavio](./kuvat/luokkakaavio_ot_harjoitustyo.png)
+![luokkakaavio](./kuvat/luokkakaavio.png)
 
 ### Sekvenssikaavio
 Sekvenssikaavio kuvaa ohjelman käynnistymisen alkua ja on kahdessa osassa luokkien suuren määrän vuoksi.
