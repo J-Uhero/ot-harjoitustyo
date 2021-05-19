@@ -42,3 +42,6 @@ poetry run invoke lint
 [first release](https://github.com/J-Uhero/ot-harjoitustyo/releases/tag/viikko5)
 
 [2th release](https://github.com/J-Uhero/ot-harjoitustyo/releases/tag/viikko6)
+
+### Deadlinen jälkeinen huomio
+Ikäväkseni huomasin, ohjelmaan oli huolimattomuuttani jäänyt bugi, joka aiheuttaa ohjelman kaatumisen, kun ohjelman ScoresService-luokka hakee tietokannasta pelaajan sijoitusta tietokannan ollessa tyhjä. Buginen funktio päätyi aiemmin ongelmatta toimineen ohjelman käyttöön vasta loppumetreillä luokan testejä päiviellessäni ja tekemästäni testiluokastanikin jäi testaamatta funktion toimivuus vain silloin, kun siihen on jo tallennettu tietoja. Tein nyt jälkikäteen korjauksen ohjelmakoodiini, koska halusin ohjelmastani toimivan version ja mainita huomanneeni virheen, vaikkakin liian myöhään. Teen nyt uuden releasen tähän alle tiedostaen toki, että varsinainen loppupalautukseni on se, joka on arvioinnin kohteena.
