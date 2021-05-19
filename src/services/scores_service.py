@@ -53,7 +53,7 @@ class ScoresService:
             bool: totuusarvo, joka kertoo oliko tulos kymmenennen parhaan joukossa
         """
         high_scores = self.repository.find_high_scores_by_level(level, 10)
-        if len(high_scores) == 0:
+        if len(high_scores) < 10:
             return True
         if high_scores[-1].time > time:
             return True
